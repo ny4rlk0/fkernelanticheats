@@ -32,9 +32,9 @@ Cable Connections:<br>
 Pico 2W GP0 => CP 2102 RXD (Orange Wire in the picture) <br>
 Pico 2W GP1 => CP 2102 TXD (Yellow Wire in the picture) <br>
 Pico 2W GND => CP 2102 GND (Green Wire in the picture) <br>
-
+<br>
 Silicon Labs CP2102 UART Installation:
-
+<br>
 Remove the Yellow Jumper Switch on the CP2102 and reconnect it, covering VCCIO and 5V, as shown in the picture. <br>
 Doing this incorrectly could damage the board by supplying 5V to the 3V circuit. <br>
 Install the Silicon Labs CP2102 driver on the UART COM port connected to the second computer via Device Manager. <br>
