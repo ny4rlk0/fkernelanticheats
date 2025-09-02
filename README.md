@@ -66,3 +66,61 @@ If the transmitted movement is too fast, you may trigger Anti-Cheat's Inhuman Mo
 This means if your mouse travels a ridiculous distance, like 20 meters, you could encounter a problem. <br>
 Slow down, smooth out, and add slight errors before sending the movement. Don't send too much movement all at once! <br> 
 The firmware limits the mouse's x and y movements to 128. This is sufficient for a proper software and device. <br>
+
+# Türkçe
+
+⚠️ Yalnızca eğitim ve araştırma amaçlıdır. Bu proje, özellikle çekirdek düzeyinde çalışan ve kullanıcı gizliliğini ihlal eden müdahaleci hile önleme uygulamalarını eleştirmektedir.
+
+💡 MIT Lisanslı. İkili dosya yok, enjeksiyon yok, değişiklik yok. Sadece saf donanım emülasyonu.
+
+Sürekli çalışan Çekirdek Hile Önleme programları olmamalı! Oyuncular her zaman hile yapmanın bir yolunu bulur. Bu, AC'yi her zaman çekirdek düzeyinde çalıştırmayı, AC'yi işletim sisteminden önce başlatmayı veya başkalarının gizliliğini ihlal etmeyi mazur göstermez! IMG Pico 2 W, taktığınız bilgisayarda gerçek bir USB fare gibi görünürken, görselde gösterilen Type-C UART CP2102'yi kullanarak ikinci bilgisayardan UART aracılığıyla fare hareketlerini alır.
+Bunun için bir demo Python kodu yazdım.
+
+Ürün yazılımı yalnızca belirli fare modelleriyle uyumludur.
+Şu anda Logitech M330 ve Lecoo MS108 ile test edilmiştir.
+Yüksek hızlı veya karmaşık oyun fareleri desteklenmeyebilir.
+
+(Fare, 8 bayttan büyük veya 1000 Hz'den hızlı bir rapor tanımlayıcısına sahip fareleri desteklemez.)
+
+Şu anda yalnızca Logitech m330 veya Lecoo ms108 farelerini destekler.
+Demo yazılımını geliştirip kendi farenizi ekleyebilirsiniz, ancak her fare çalışmayacaktır.
+Razer, Logitech vb. markaların birden fazla arayüzü veya düğmesi olan oyun fareleri çalışmayacaktır.
+Tek arayüzlü farelerin çalışma olasılığı daha yüksektir.
+Python kodu, yalnızca ürün yazılımının nasıl kullanılacağını anlamanıza yardımcı olmak için örnek olarak verilmiştir.
+
+Gerekli donanım:
+
+1 adet desteklenen fare. 1 Raspberry Pi Pico 2W
+1 CP2102 Type C UART veya 115200'ü destekleyen başka bir UART cihazı
+3 Dişi-Dişi Jumper Kablosu
+1 Mikro USB Kablosu
+1 Type C Kablosu
+
+Kablo Bağlantıları:
+
+Pico 2W GP0 => CP 2102 RXD (Resimdeki Turuncu Kablo)
+Pico 2W GP1 => CP 2102 TXD (Resimdeki Sarı Kablo)
+Pico 2W GND => CP 2102 GND (Resimdeki Yeşil Kablo)
+
+Silicon Labs CP2102 UART Kurulumu:
+CP2102 üzerindeki Sarı Jumper Anahtarını çıkarın ve resimde gösterildiği gibi VCCIO ve 5V'u kapatacak şekilde yeniden bağlayın.
+Bunu yanlış yapmak, 3V devresine 5V vererek karta zarar verebilir. Silicon Labs CP2102 sürücüsünü Aygıt Yöneticisi aracılığıyla ikinci bilgisayara bağlı UART COM portuna yükleyin.
+Aygıt Yöneticisi'nde UART Hızını 115200 olarak ayarlayın.
+
+Genel Mantık şu şekildedir:
+
+PICO 2 W, oyun bilgisayarına kendini gerçek bir HID fare olarak tanıtır.
+PICO 2 W, ikinci bilgisayardan UART (SL CP2102) aracılığıyla fare komutlarını alır.
+Desteklenen bir fareyi ikinci bilgisayara bağlayın ve Zadig kullanarak WinUSB sürücüsünü yükleyin.
+mouse_filter.py dosyasında desteklemek istediğiniz farenin açıklamasını kaldırın.
+Desteklenen bir fare bağlıyken, mouse_filter.py dosyasını çalıştırın ve doğru COM portunu seçin.
+İkinci bilgisayardan yapılan fare hareketleri, UART aracılığıyla ilk oyun bilgisayarında fare olarak görünen PICO 2 W'ye aktarılır. Bu, ikinci bilgisayarın faresini etkilemez. İlk bilgisayarı OBS ile kaydedebilir, ikinci bilgisayardan ekranı izleyebilir ve herhangi bir cihaz veya yazılımla nişan alabilirsiniz. Bu nişanı send_aim.py dosyasındaki örneği kullanarak gönderebilirsiniz.
+Ya da, ilk bilgisayarın görüntü çıkışını monitöre göstermeden bir Ekran Kaydedici kartı kullanabilir ve USB çıkışını ikinci bilgisayara bağlayabilirsiniz.
+Herhangi bir cihaz veya yazılımla nişan alın.
+Nişanı send_aim.py dosyasıyla gönderebilirsiniz.
+
+send.aim.py hakkında not: Buraya girilen bilgiler, doğrudan pico 2 W'den ilk oyun bilgisayarına fare tanımlayıcı raporu olarak gönderilir.
+
+İletilen hareket çok hızlıysa, Anti-Cheat'in İnsanlık Dışı Hareket özelliğini tetikleyebilirsiniz.
+Bu, fareniz 20 metre gibi saçma bir mesafe kat ederse bir sorunla karşılaşabileceğiniz anlamına gelir.
+Hareket göndermeden önce yavaşlatın, yumuşatın ve küçük hatalar ekleyin. Tek seferde çok fazla hareket göndermeyin! Yazılım, farenin x ve y hareketlerini 128 ile sınırlandırıyor. Bu, düzgün bir yazılım ve cihaz için yeterli.
