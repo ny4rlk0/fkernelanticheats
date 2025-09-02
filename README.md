@@ -1,7 +1,7 @@
 # fuckkernelanticheats
 Note: This tool is for educational or research use only.<br>
 <br>
-There shouldn't be Kernel Anti-Cheat programs running all the time! Players always find a way to cheat. That doesn't excuse always running AC at the kernel level (I'm looking at you, 4-letter company), starting AC before the OS, or violating other people's privacy!
+There shouldn't be Kernel Anti-Cheat programs running all the time! Players always find a way to cheat. That doesn't excuse always running AC at the kernel level, starting AC before the OS, or violating other people's privacy!
 ![IMG](https://raw.githubusercontent.com/ny4rlk0/fuckkernelanticheats/refs/heads/main/picture.png)
 The Pico 2 W appears as a real USB mouse on the computer you plug it into, <br>
 while receiving mouse movements from the second <br>
