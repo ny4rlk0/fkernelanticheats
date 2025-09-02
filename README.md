@@ -29,9 +29,9 @@ Required hardware:<br>
 <br>
 Cable Connections:<br>
 <br>
-* Pico 2W GP0 => CP 2102 RXD (Orange Wire in the picture)
-* Pico 2W GP1 => CP 2102 TXD (Yellow Wire in the picture)
-* Pico 2W GND => CP 2102 GND (Green Wire in the picture)
+Pico 2W GP0 => CP 2102 RXD (Orange Wire in the picture) <br>
+Pico 2W GP1 => CP 2102 TXD (Yellow Wire in the picture) <br>
+Pico 2W GND => CP 2102 GND (Green Wire in the picture) <br>
 
 Silicon Labs CP2102 UART Installation:
 
