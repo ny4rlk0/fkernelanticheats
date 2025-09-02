@@ -2,7 +2,7 @@
 ⚠️ For educational and research purposes only. This project critiques invasive anti-cheat practices, especially those operating at kernel level and violating user privacy.<br>
 <br>
 💡 MIT Licensed. No binaries, no injection, no modification. Just pure hardware emulation.<br>
-If they ban this mouse just emulate different mouse you can change this from blink.c/usb_descriptors.c. They can't block this permanently at all, all they can do is blacklist spesific mouse this firmware emulates and you can change that easily!<br>
+If they black list this mouse just emulate different mouse you can change this from blink.c/usb_descriptors.c. They can't block this permanently at all, all they can do is blacklist spesific mouse this firmware emulates and you can change that easily!<br>
 <br>
 There shouldn't be Kernel Anti-Cheat programs running all the time! Players always find a way to cheat. That doesn't excuse always running AC at the kernel level, starting AC before the OS, or violating other people's privacy!
 ![IMG](https://raw.githubusercontent.com/ny4rlk0/fkernelanticheats/refs/heads/main/picture.png)
