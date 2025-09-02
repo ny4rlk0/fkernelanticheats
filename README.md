@@ -1,5 +1,5 @@
 # fuckkernelanticheats
-Always Running Kernel Anti Cheats shouldn't have been existed! This makes them useless! Players will always find a ways to cheat. This doesn't excuse running AC at kernel level at all times (i am looking at you 4 letter company), starting ac from boot or invading other people's privacy!
+There shouldn't be Kernel Anti-Cheat programs running all the time! This software renders them useless! Players always find a way to cheat. That doesn't excuse always running AC at the kernel level (I'm looking at you, 4-letter company), starting AC before the OS, or violating other people's privacy!
 ![IMG](https://raw.githubusercontent.com/ny4rlk0/fuckkernelanticheats/refs/heads/main/picture.png)
 The Pico 2 W appears as a real USB mouse on the computer you plug it into, <br>
 while receiving mouse movements from the second <br>
