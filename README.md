@@ -90,17 +90,17 @@ Python kodu, yalnızca ürün yazılımının nasıl kullanılacağını anlaman
 
 Gerekli donanım:
 
-1 adet desteklenen fare. 1 Raspberry Pi Pico 2W
-1 CP2102 Type C UART veya 115200'ü destekleyen başka bir UART cihazı
-3 Dişi-Dişi Jumper Kablosu
-1 Mikro USB Kablosu
-1 Type C Kablosu
+* 1 adet desteklenen fare. 1 Raspberry Pi Pico 2W
+* 1 CP2102 Type C UART veya 115200'ü destekleyen başka bir UART cihazı
+* 3 Dişi-Dişi Jumper Kablosu
+* 1 Mikro USB Kablosu
+* 1 Type C Kablosu
 
-Kablo Bağlantıları:
+Kablo Bağlantıları:<br>
 
-Pico 2W GP0 => CP 2102 RXD (Resimdeki Turuncu Kablo)
-Pico 2W GP1 => CP 2102 TXD (Resimdeki Sarı Kablo)
-Pico 2W GND => CP 2102 GND (Resimdeki Yeşil Kablo)
+Pico 2W GP0 => CP 2102 RXD (Resimdeki Turuncu Kablo)<br>
+Pico 2W GP1 => CP 2102 TXD (Resimdeki Sarı Kablo)<br>
+Pico 2W GND => CP 2102 GND (Resimdeki Yeşil Kablo)<br>
 
 Silicon Labs CP2102 UART Kurulumu:
 CP2102 üzerindeki Sarı Jumper Anahtarını çıkarın ve resimde gösterildiği gibi VCCIO ve 5V'u kapatacak şekilde yeniden bağlayın.
