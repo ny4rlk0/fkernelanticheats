@@ -1,5 +1,5 @@
 # fuckkernelanticheats
-⚠️ For educational and research purposes only. This project critiques invasive anti-cheat practices — especially those operating at kernel level and violating user privacy.<br>
+⚠️ For educational and research purposes only. This project critiques invasive anti-cheat practices, especially those operating at kernel level and violating user privacy.<br>
 <br>
 💡 MIT Licensed. No binaries, no injection, no modification. Just pure hardware emulation.<br>
 <br>
