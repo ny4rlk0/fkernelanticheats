@@ -1,5 +1,7 @@
 # fuckkernelanticheats
-Note: This tool is for educational or research use only.<br>
+⚠️ For educational and research purposes only. This project critiques invasive anti-cheat practices — especially those operating at kernel level and violating user privacy.<br>
+<br>
+💡 MIT Licensed. No binaries, no injection, no modification. Just pure hardware emulation.<br>
 <br>
 There shouldn't be Kernel Anti-Cheat programs running all the time! Players always find a way to cheat. That doesn't excuse always running AC at the kernel level, starting AC before the OS, or violating other people's privacy!
 ![IMG](https://raw.githubusercontent.com/ny4rlk0/fuckkernelanticheats/refs/heads/main/picture.png)
