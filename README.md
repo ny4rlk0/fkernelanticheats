@@ -20,23 +20,18 @@ The Python code is provided solely as an example to help you understand how to u
 <br>
 Required hardware:<br>
 <br>
-1 supported mouse.<br>
-<br>
-1 Raspberry Pi Pico 2W<br>
-<br>
-1 CP2102 Type C UART or other UART device that supports 115200<br>
-<br>
-3 Female-to-Female Jumper Cables<br>
-<br>
-1 Micro USB Cable<br>
-<br>
-1 Type C Cable<br>
+* 1 supported mouse.
+* 1 Raspberry Pi Pico 2W
+* 1 CP2102 Type C UART or other UART device that supports 115200<br>
+* 3 Female-to-Female Jumper Cables<br>
+* 1 Micro USB Cable<br>
+* 1 Type C Cable<br>
 <br>
 Cable Connections:<br>
 <br>
-Pico 2W GP0 => CP 2102 RXD (Orange Wire in the picture)<br>
-Pico 2W GP1 => CP 2102 TXD (Yellow Wire in the picture)<br>
-Pico 2W GND => CP 2102 GND (Green Wire in the picture)<br>
+* Pico 2W GP0 => CP 2102 RXD (Orange Wire in the picture)
+* Pico 2W GP1 => CP 2102 TXD (Yellow Wire in the picture)
+* Pico 2W GND => CP 2102 GND (Green Wire in the picture)
 
 Silicon Labs CP2102 UART Installation:
 
